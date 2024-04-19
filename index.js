@@ -8,7 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const formData = new FormData(event.target);
     const currencyCode = formData.get("currency");
-    const amount = parseFloat(formData.get("amount"));
+    let amount = parseFloat(formData.get("amount"));
+
+    const amountInput = document.getElementById("amount");
+    amountInput.setAttribute("min", "0.01");
+    amountInput.setAttribute("step", "0.01");
 
     if (amount < 0.01) {
       resultDiv.textContent = "Minimalna wartość to 0.01";
