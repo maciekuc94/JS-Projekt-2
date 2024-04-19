@@ -20,9 +20,7 @@
   margin-bottom: 5px;
 }
 
-.form-input,
-.form-select,
-.form-button {
+.form-element {
   box-sizing: border-box;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -45,6 +43,7 @@
 .hidden {
   display: none;
 }
+
 .loader {
   position: fixed;
   top: 50%;
@@ -57,10 +56,6 @@
   border-radius: 50%;
   width: 120px;
   height: 120px;
-}
-
-.hidden {
-  display: none;
 }
 
 @keyframes spin {

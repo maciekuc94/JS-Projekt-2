@@ -11,7 +11,7 @@
       <h1 class="title-heading">Przelicznik Walut</h1>
       <form id="currency-form" class="currency-form">
         <label for="currency-select" class="form-label">Wybierz walutę:</label>
-        <select id="currency-select" name="currency" class="form-select">
+        <select id="currency-select" name="currency" class="form-element">
           <option value="EUR">Euro</option>
           <option value="USD">Dolary amerykańskie</option>
           <option value="CHF">Franki szwajcarskie</option>
@@ -21,10 +21,10 @@
           type="number"
           id="amount"
           name="amount"
-          class="form-input"
+          class="form-element"
           min="0"
           required />
-        <button type="submit" class="form-button">Przelicz</button>
+        <button type="submit" class="form-button form-element">Przelicz</button>
       </form>
       <div id="loader" class="loader hidden"></div>
       <div id="result" class="result-container"></div>
