@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Przelicznik Walut</title>
+    <title>Currency Converter</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1 class="title-heading">Przelicznik Walut</h1>
+      <h1 class="title-heading">Currency Converter</h1>
       <form id="currency-form" class="currency-form">
-        <label for="currency-select" class="form-label">Wybierz walutę:</label>
+        <label for="currency-select" class="form-label">Select currency:</label>
         <select id="currency-select" name="currency" class="form-element">
           <option value="EUR">Euro</option>
-          <option value="USD">Dolary amerykańskie</option>
-          <option value="CHF">Franki szwajcarskie</option>
+          <option value="USD">US Dollars</option>
+          <option value="CHF">Swiss Francs</option>
         </select>
-        <label for="amount" class="form-label">Kwota:</label>
+        <label for="amount" class="form-label">Amount:</label>
         <input
           type="number"
           id="amount"
@@ -24,7 +24,7 @@
           class="form-element"
           min="0"
           required />
-        <button type="submit" class="form-button form-element">Przelicz</button>
+        <button type="submit" class="form-button form-element">Convert</button>
       </form>
       <div id="loader" class="loader hidden"></div>
       <div id="result" class="result-container"></div>
